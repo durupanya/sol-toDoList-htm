@@ -1,12 +1,21 @@
 {
   "name": "toDoList-htm",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durupanya/sol-toDoList-htm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/durupanya/sol-toDoList-htm/issues"
+  },
+  "homepage": "https://github.com/durupanya/sol-toDoList-htm#readme",
+  "description": ""
 }
