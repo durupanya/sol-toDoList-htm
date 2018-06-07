@@ -17,7 +17,7 @@ var localStorageItem = "";
 })();
 
 
-var filterSH = {
+ filterSH = {
 
     filterFnc: function (params) {
         const slctItem = params;
@@ -59,7 +59,7 @@ function setLocalStorage() {
     }   
 
     localStorage.setItem("lastname", localStorageItem);
-    console.log(localStorage.getItem("lastname"))
+    //console.log(localStorage.getItem("lastname"))
 }
 
 setLocalStorage();
