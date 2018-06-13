@@ -20,7 +20,7 @@
         <h5 class="my-0 mr-md-auto font-weight-normal">Solvoyo TodoList</h5>
         <div class="dropdown">
             <select id="slctBox" class="form-control" onchange="filterSH.filterFnc(this);">
-                    <option value="-1">Sıralama</option>
+                <option value="-1">Sıralama</option>
                 <option value="0">Yapılanlar</option>
                 <option value="1">Bekleyenler</option>
                 <option value="3">Tümü</option>
@@ -28,13 +28,17 @@
         </div>
     </div>
 
-
-
     <!-- Begin page content -->
     <main id="fullSiteWrapper" role="main" class="container">
         <div class="contentWrapper">
             <h1>Yapılacaklar Listesi</h1>
-            <ul class="list-group">
+            <div class="input-group mb-3">
+                <input type="text" id="newToDoItemBox" class="form-control" placeholder="Eklemek istediğiniz iş maddesi..">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="toDoListGrp.addNewToDoItem();">Yeni Ekle</button>
+                </div>
+            </div>
+            <ul id="list-group" class="list-group">
                 <li class="list-group-item">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -44,25 +48,25 @@
                 <li class="list-group-item">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck1">Dapibus ac facilisis in</label>
+                        <label class="custom-control-label" for="customCheck2">Dapibus ac facilisis in</label>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck1">Morbi leo risus</label>
+                        <label class="custom-control-label" for="customCheck3">Morbi leo risus</label>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck1">Porta ac consectetur ac</label>
+                        <label class="custom-control-label" for="customCheck4">Porta ac consectetur ac</label>
                     </div>
                 </li>
                 <li class="list-group-item">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck1">Vestibulum at eros</label>
+                        <label class="custom-control-label" for="customCheck5">Vestibulum at eros</label>
                     </div>
                 </li>
             </ul>
@@ -76,12 +80,22 @@
 
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+    <script src="Content/Javascripts/jquery-3.0.0.js"></script>
+    <script src="Content/Javascripts/jquery-migrate-3.0.1.js"></script>
 
     <script src="Content/Javascripts/bootstrap.js"></script>
     <script type="text/javascript" src="Content/Javascripts/bundle.js"></script>
     <!-- END - SCRIPTS -->
+
+
+    <script id="template-list-item" type="text/template">
+        <li class="list-group-item">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id={{customCheck}}>
+                    <label class="custom-control-label" for={{customCheck}}>{{name}}</label>
+                </div>
+            </li>
+      </script>
 
 </body>
 
