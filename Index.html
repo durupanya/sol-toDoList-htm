@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" data-enhance="false">
 
-<head>
-    <title>Solvoyo TodoList</title>
+  <head>
+    <title>Durupanya TodoList</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="description" content="Bu çalışma Özkan Avşar tarafından Solvoyo firması için örnek olarak hazırlanmıştır.">
-    <meta name="author" content="özkan avşar">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+      <meta name="description" content="Bu çalışma Özkan Avşar tarafından XXX firması için örnek olarak hazırlanmıştır.">
+        <meta name="author" content="özkan avşar">
 
-    <link rel="stylesheet" type="text/css" href="Content/Styles/Reset.css" />
-    <link rel="stylesheet" type="text/css" href="Content/Styles/Common.css" />
-    <link rel="stylesheet" type="text/css" href="Content/Styles/Bootstrap.css" />
-    <!-- <link rel="icon" href="Images/favicon.ico"> -->
-</head>
+          <link rel="stylesheet" type="text/css" href="Content/Styles/Reset.css" />
+          <link rel="stylesheet" type="text/css" href="Content/Styles/Common.css" />
+          <link rel="stylesheet" type="text/css" href="Content/Styles/Bootstrap.css" />
+          <!-- <link rel="icon" href="Images/favicon.ico"> -->
+        </head>
 
-<body>
+  <body>
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal">Solvoyo TodoList</h5>
-        <div class="dropdown">
-            <select id="slctBox" class="form-control" onchange="filterSH.filterFnc(this);">
-                <option value="-1">Sıralama</option>
-                <option value="0">Yapılanlar</option>
-                <option value="1">Bekleyenler</option>
-                <option value="3">Tümü</option>
-            </select>
-        </div>
+      <h5 class="my-0 mr-md-auto font-weight-normal">XXXX TodoList</h5>
+      <div class="dropdown">
+        <select id="slctBox" class="form-control" onchange="filterSH.filterFnc(this);">
+          <option value="-1">Sıralama</option>
+          <option value="0">Yapılanlar</option>
+          <option value="1">Bekleyenler</option>
+          <option value="3">Tümü</option>
+        </select>
+      </div>
     </div>
 
     <!-- Begin page content -->
     <main id="fullSiteWrapper" role="main" class="container">
-        <div class="contentWrapper">
-            <h1>Yapılacaklar Listesi</h1>
-            <div class="input-group mb-3">
-                <input type="text" id="newToDoItemBox" class="form-control" placeholder="Eklemek istediğiniz iş maddesi..">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" onclick="toDoListGrp.addNewToDoItem();">Yeni Ekle</button>
-                </div>
+      <div class="contentWrapper">
+        <h1>Yapılacaklar Listesi</h1>
+        <div class="input-group mb-3">
+          <input type="text" id="newToDoItemBox" class="form-control" placeholder="Eklemek istediğiniz iş maddesi..">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" onclick="toDoListGrp.addNewToDoItem();">Yeni Ekle</button>
             </div>
-            <ul id="list-group" class="list-group">
-                <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Cras justo odio</label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Dapibus ac facilisis in</label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck3">Morbi leo risus</label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck4">Porta ac consectetur ac</label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5">Vestibulum at eros</label>
-                    </div>
-                </li>
-            </ul>
+          </div>
+        <ul id="list-group" class="list-group">
+          <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Cras justo odio</label>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Dapibus ac facilisis in</label>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3">Morbi leo risus</label>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                <label class="custom-control-label" for="customCheck4">Porta ac consectetur ac</label>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck5">
+                <label class="custom-control-label" for="customCheck5">Vestibulum at eros</label>
+              </div>
+          </li>
+        </ul>
 
-            <div class="alert alert-warning mt-3" role="alert">
-                Bitirmiş olduğunuz işler için her bir maddenin üzerine tıklayınız.
-            </div>
+        <div class="alert alert-warning mt-3" role="alert">
+          Bitirmiş olduğunuz işler için her bir maddenin üzerine tıklayınız.
         </div>
+      </div>
     </main>
     <!-- /.container -->
 
@@ -89,14 +89,14 @@
 
 
     <script id="template-list-item" type="text/template">
-        <li class="list-group-item">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id={{customCheck}}>
-                    <label class="custom-control-label" for={{customCheck}}>{{name}}</label>
-                </div>
-            </li>
-      </script>
+      <li class="list-group-item">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id={{"customCheck"}}>
+            <label class="custom-control-label" for={{"customCheck"}}>{{name}}</label>
+          </div>
+      </li>
+    </script>
 
-</body>
+  </body>
 
 </html>
